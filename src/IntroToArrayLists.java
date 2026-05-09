@@ -1,4 +1,4 @@
-package _00_intro_to_array_lists;
+
 import java.util.ArrayList;
 public class IntroToArrayLists {
 	public static void main(String[] args) {
@@ -13,9 +13,7 @@ public class IntroToArrayLists {
 		stuff.add("Why");
 		//3. Print all the Strings using a standard for-loop
 		for (int x=stuff.size()-1; x>=0;x--) {
-			if (stuff.get(x).contains("e")) {
-				System.out.println(stuff.get(x));				
-			}
+			System.out.println(stuff.get(x));
 		}
 		//4. Print all the Strings using a for-each loop
 		//5. Print only the even numbered elements in the list.

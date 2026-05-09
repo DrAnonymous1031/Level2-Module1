@@ -1,7 +1,9 @@
+
 package _01_array_list_visualizer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.spi.LocaleNameProvider;
 
 import javax.swing.JFrame;
 import javax.swing.Timer;
@@ -18,16 +20,21 @@ public class VisualArrayLists implements ActionListener {
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
 		list.add("rigrijgrjgrijgi");
 		list.add("why tho");
-		list.add("do not not not not");
+		list.add("not");
+		list.add("09F911029D74E35BD84156C5635688C0̑́̓̊̚");
+		
 		// 2. Set one item in our list to be something different
-		
+		list.set(0, "i know where you live:3");
+		System.out.println(list);
 		// 3. Remove something from our list
-		
+		list.remove(0);
 		// 4. Print the size of our list
-		
+		System.out.println(list.size());
 		// 5. Check if our list contains a specific thing of your choice
 		//	  and print whether it is in the list or not.
-		
+		if(list.contains("not")) {
+			
+		}
 		// 6. Get a specific item from our list and print it out
 		
 		// 7. Clear our list of all items
