@@ -15,5 +15,6 @@ public class Action<T> {
 		this.type = type;
 		this.index = index;
 		this.value = value;
+		
 	}
 }

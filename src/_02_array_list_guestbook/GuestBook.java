@@ -12,7 +12,9 @@ public class GuestBook {
 	static JButton Polly = new JButton();
 	static JButton Gigi = new JButton();
 	ArrayList <String> yeah = new ArrayList<String>();
-	public static void main(String[] args) {
+	public void main(String[] args) {
+		frame.add(panel);
+		frame.setVisible(true);
 		Polly.setText("View Names");
 		Gigi.setText("Add names");
 		Polly.addActionListener((e) -> {
