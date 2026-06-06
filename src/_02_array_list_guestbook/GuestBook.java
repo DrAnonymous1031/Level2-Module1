@@ -12,14 +12,28 @@ public class GuestBook {
 	static JButton Polly = new JButton();
 	static JButton Gigi = new JButton();
 	ArrayList <String> yeah = new ArrayList<String>();
-	public void main(String[] args) {
+	void run() {
 		frame.add(panel);
-		frame.setVisible(true);
 		Polly.setText("View Names");
 		Gigi.setText("Add names");
+		panel.add(Gigi);
+		panel.add(Polly);
+		frame.pack();
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Polly.addActionListener((e) -> {
-			System.out.println("bozo");
+			for(int i=0; i<yeah.size(); i++) {
+				System.out.println(yeah.get(i));
+			}
 		});
+		Gigi.addActionListener((e) -> {
+			String name = JOptionPane.showInputDialog("Enter your name.");
+			yeah.add(name);
+		});
+	}
+	public static void main(String[] args) {
+		GuestBook book = new GuestBook();
+		book.run();
 	}
 	// When the add name button is clicked, display an input dialog that asks the user to enter a name. Add
 	// that name to an ArrayList. When the "View Names" button is clicked, display a message dialog that displays
